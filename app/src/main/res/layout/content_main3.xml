@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="gratuitycalculator.becotech.com.gratuitycalculator.Main2Activity"
+    tools:showIn="@layout/app_bar_main3">
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/snapview"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/ab"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/belwid">
+                <com.google.android.gms.ads.AdView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+
+
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/banner_ad_unit_id_home">
+                </com.google.android.gms.ads.AdView>
+                <!--android:layout_alignParentBottom="true"-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay1"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/belwid"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center">
+
+
+                <EditText
+                    android:id="@+id/ed2"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="bottom"
+                    android:calendarViewShown="false"
+                    android:focusable="true"
+                    android:hint="Enter Joining Date"
+                    android:focusableInTouchMode="false"
+                    android:inputType="date"
+                    android:nextFocusDown="@+id/editText_end"
+
+                    android:textColor="#610B4B"
+                    android:textColorHint="#2E2E2E"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/lay1"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/ed3"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:ems="10"
+                    android:calendarViewShown="false"
+                    android:hint="Enter Last Date"
+                    android:inputType="date"
+                    android:focusableInTouchMode="false"
+                    android:nextFocusDown="@+id/editText_salary"
+                    android:textColor="#610B4B"
+                    android:textColorHint="#2E2E2E" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/lay2"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/ed1"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+
+                    android:hint="Enter Basic Salary"
+                    android:inputType="numberDecimal"
+                    android:textColor="#610B4B"
+                    android:textColorHint="#2E2E2E" />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay4"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay3"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:gravity="center">
+
+                <RadioGroup
+
+                    android:id="@+id/radioterminate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <RadioButton
+
+                        android:id="@+id/radioButton1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.4"
+                        android:checked="true"
+                        android:text="Resigned"
+                        android:textColor="#2E2E2E"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="Fired"
+                        android:textColor="#2E2E2E"
+                        android:textSize="15sp" />
+
+
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay6"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/lay4"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/res"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="#610B4B"
+
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay7"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/lay6"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/p"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="25dp"
+
+                    android:background="@drawable/tellfriend_selector"
+                    android:padding="5dp"
+                    android:shadowColor="@color/purewhite"
+                    android:text="Calculate"
+                    android:textColor="#2E2E2E"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

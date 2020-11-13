@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gratuitycalculator.becotech.com.gratuitycalculator">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="gratuitycalculator.becotech.com.gratuitycalculator.MainActivity"
+                android:screenOrientation="portrait"
+                />
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="7faa02f313e4435d8bb9f6c4185ed7c1e56ffc48" />
+
+        <!-- <meta-data xmlns:tools="http://schemas.android.com/tools" -->
+        <!-- android:name="android.support.VERSION" -->
+        <!-- android:value="26.1.0" /> -->
+
+        <activity
+            android:name=".activity2"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:parentActivityName="gratuitycalculator.becotech.com.gratuitycalculator.MainActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="gratuitycalculator.becotech.com.gratuitycalculator.activity2" />
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            android:parentActivityName="gratuitycalculator.becotech.com.gratuitycalculator.MainActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="gratuitycalculator.becotech.com.gratuitycalculator.Main2Activity" />
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Gratuity Calculator</string>
+    <string name="banner_ad_unit_id_home" translatable="false">ca-app-pub-5388935817181488/6214760733</string>
+    <!--ca-app-pub-5388935817181488/6214760733-->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Share</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+</resources>
